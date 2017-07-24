@@ -44,6 +44,7 @@ namespace RoboClawTest01
             if (_roboClaw.IsOpen())
             {
                 _roboClaw.ST_M1Forward(100); // Start the motor going forward at power 100
+                _roboClaw.ST_M2Forward(100); // Start the motor going forward at power 100
                 MyTimer.Start(); // Start timer to show encoder ticks
                 buttonStop.Enabled = true;
                 buttonGoForward.Enabled = false;
@@ -58,6 +59,7 @@ namespace RoboClawTest01
             if (_roboClaw.IsOpen())
             {
                 _roboClaw.ST_M1Backward(100); // Start the motor going forward at power 100
+                _roboClaw.ST_M2Backward(100); // Start the motor going forward at power 100
                 MyTimer.Start(); // Start timer to show encoder ticks
                 buttonStop.Enabled = true;
                 buttonGoForward.Enabled = false;
@@ -76,10 +78,12 @@ namespace RoboClawTest01
                 if (_m1EncoderCnt > 0)
                 {
                     _roboClaw.ST_M1Backward(100); // Start the motor going forward at power 100
+                    _roboClaw.ST_M2Backward(100); // Start the motor going forward at power 100
                 }
                 else if (_m1EncoderCnt < 0)
                 {
                     _roboClaw.ST_M1Forward(100); // Start the motor going forward at power 100
+                    _roboClaw.ST_M2Forward(100); // Start the motor going forward at power 100
                 }
                 buttonStop.Enabled = true;
                 buttonGoForward.Enabled = false;
@@ -94,6 +98,7 @@ namespace RoboClawTest01
             if (_roboClaw.IsOpen())
             {
                 _roboClaw.ST_M1Forward(0); // Stop the motor
+                _roboClaw.ST_M2Forward(0); // Stop the motor
                 MyTimer.Stop(); // Stop timer to stop encoder updates
                 buttonStop.Enabled = false;
                 buttonGoForward.Enabled = true;
@@ -129,6 +134,7 @@ namespace RoboClawTest01
             if (_roboClaw.IsOpen())
             {
                 _roboClaw.ST_M1Forward(0); // Stop the motor
+                _roboClaw.ST_M2Forward(0); // Stop the motor
                 _roboClaw.Close(); // Close the interface
                 MyTimer.Stop(); // Stop the timer to stop the encoder display updates
             }
@@ -139,12 +145,12 @@ namespace RoboClawTest01
         {
             // Get encoder ticks.
             _roboClaw.GetEncoders(out _m1EncoderCnt, out _m2EncoderCount);
-            lblMainVoltage.Text = _m1EncoderCnt.ToString();
+            lblM1EncoderTicksCount.Text = _m1EncoderCnt.ToString();
             lblM2EncoderTicksCount.Text = _m2EncoderCount.ToString();
 
             // Get current values.
             _roboClaw.GetCurrents(out _m1Current, out _m2Current);
-            lblLogicVoltage.Text = _m1Current.ToString();
+            lblM1Current.Text = _m1Current.ToString();
             lblM2Current.Text = _m2Current.ToString();
 
             // Get temperature.

@@ -35,20 +35,20 @@
             this.labelModelTitle = new System.Windows.Forms.Label();
             this.labelRoboClawModel = new System.Windows.Forms.Label();
             this.labelTicks = new System.Windows.Forms.Label();
-            this.lblMainVoltage = new System.Windows.Forms.Label();
+            this.lblM1EncoderTicksCount = new System.Windows.Forms.Label();
             this.buttonGoReverse = new System.Windows.Forms.Button();
             this.buttonGoToZero = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblM2EncoderTicksCount = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
-            this.lblLogicVoltage = new System.Windows.Forms.Label();
+            this.lblM1Current = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblM2Current = new System.Windows.Forms.Label();
             this.lblTemperature = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblMainVoltage = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblLogicVoltage = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -124,15 +124,15 @@
             this.labelTicks.TabIndex = 6;
             this.labelTicks.Text = "M1 Encoder Ticks:";
             // 
-            // lblMainVoltage
+            // lblM1EncoderTicksCount
             // 
-            this.lblMainVoltage.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMainVoltage.Location = new System.Drawing.Point(199, 83);
-            this.lblMainVoltage.Name = "lblMainVoltage";
-            this.lblMainVoltage.Size = new System.Drawing.Size(100, 14);
-            this.lblMainVoltage.TabIndex = 7;
-            this.lblMainVoltage.Text = "     0";
-            this.lblMainVoltage.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblM1EncoderTicksCount.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblM1EncoderTicksCount.Location = new System.Drawing.Point(199, 83);
+            this.lblM1EncoderTicksCount.Name = "lblM1EncoderTicksCount";
+            this.lblM1EncoderTicksCount.Size = new System.Drawing.Size(100, 14);
+            this.lblM1EncoderTicksCount.TabIndex = 7;
+            this.lblM1EncoderTicksCount.Text = "     0";
+            this.lblM1EncoderTicksCount.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // buttonGoReverse
             // 
@@ -184,15 +184,15 @@
             this.Label2.TabIndex = 12;
             this.Label2.Text = "M1 Current:";
             // 
-            // lblLogicVoltage
+            // lblM1Current
             // 
-            this.lblLogicVoltage.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogicVoltage.Location = new System.Drawing.Point(199, 96);
-            this.lblLogicVoltage.Name = "lblLogicVoltage";
-            this.lblLogicVoltage.Size = new System.Drawing.Size(100, 14);
-            this.lblLogicVoltage.TabIndex = 13;
-            this.lblLogicVoltage.Text = "     0";
-            this.lblLogicVoltage.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblM1Current.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblM1Current.Location = new System.Drawing.Point(199, 96);
+            this.lblM1Current.Name = "lblM1Current";
+            this.lblM1Current.Size = new System.Drawing.Size(100, 14);
+            this.lblM1Current.TabIndex = 13;
+            this.lblM1Current.Text = "     0";
+            this.lblM1Current.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label3
             // 
@@ -201,7 +201,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 14;
-            this.label3.Text = "M1 Current:";
+            this.label3.Text = "M2 Current:";
             // 
             // lblM2Current
             // 
@@ -232,15 +232,15 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Temperature:";
             // 
-            // label4
+            // lblMainVoltage
             // 
-            this.label4.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(199, 44);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 14);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "     0";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblMainVoltage.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMainVoltage.Location = new System.Drawing.Point(199, 44);
+            this.lblMainVoltage.Name = "lblMainVoltage";
+            this.lblMainVoltage.Size = new System.Drawing.Size(100, 14);
+            this.lblMainVoltage.TabIndex = 19;
+            this.lblMainVoltage.Text = "     0";
+            this.lblMainVoltage.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label6
             // 
@@ -251,15 +251,15 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "Main Voltage:";
             // 
-            // label7
+            // lblLogicVoltage
             // 
-            this.label7.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(199, 57);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 14);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "     0";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblLogicVoltage.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogicVoltage.Location = new System.Drawing.Point(199, 57);
+            this.lblLogicVoltage.Name = "lblLogicVoltage";
+            this.lblLogicVoltage.Size = new System.Drawing.Size(100, 14);
+            this.lblLogicVoltage.TabIndex = 21;
+            this.lblLogicVoltage.Text = "     0";
+            this.lblLogicVoltage.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label8
             // 
@@ -275,21 +275,21 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 213);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblLogicVoltage);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblMainVoltage);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblTemperature);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblM2Current);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.lblLogicVoltage);
+            this.Controls.Add(this.lblM1Current);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.lblM2EncoderTicksCount);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonGoToZero);
             this.Controls.Add(this.buttonGoReverse);
-            this.Controls.Add(this.lblMainVoltage);
+            this.Controls.Add(this.lblM1EncoderTicksCount);
             this.Controls.Add(this.labelTicks);
             this.Controls.Add(this.labelRoboClawModel);
             this.Controls.Add(this.labelModelTitle);
@@ -314,20 +314,20 @@
         private System.Windows.Forms.Label labelModelTitle;
         private System.Windows.Forms.Label labelRoboClawModel;
         private System.Windows.Forms.Label labelTicks;
-        private System.Windows.Forms.Label lblMainVoltage;
+        private System.Windows.Forms.Label lblM1EncoderTicksCount;
         private System.Windows.Forms.Button buttonGoReverse;
         private System.Windows.Forms.Button buttonGoToZero;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblM2EncoderTicksCount;
         private System.Windows.Forms.Label Label2;
-        private System.Windows.Forms.Label lblLogicVoltage;
+        private System.Windows.Forms.Label lblM1Current;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblM2Current;
         private System.Windows.Forms.Label lblTemperature;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblMainVoltage;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblLogicVoltage;
         private System.Windows.Forms.Label label8;
     }
 }
